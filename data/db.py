@@ -1,11 +1,8 @@
 import csv
 import requests
+from config import token
 
 base_url = "https://api.themoviedb.org/3"
-# Headers to be sent with the request (including bearer token for authentication)
-# Replace 'YOUR_API_KEY' with your actual TMDB API key
-token = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZDg3MWM5NDg1ODM2MTEyZTNlZWNhMmYyNWZiZGVkNCIsInN1YiI6IjY1ZDA3NWFkMWQzMTQzMDE4NGI5Y2Q2NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.o_k98NHwQwqTFtJB7wJoBh1Bi1BH5QtgMO2qjD2Hhio'
-
 
 headers = {
     'accept': 'application/json',
